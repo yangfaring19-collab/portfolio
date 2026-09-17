@@ -46,7 +46,9 @@ function Home() {
           </Link></h2>
 
           <p className="section-description">
-            Enterprise AI Code Assistant
+            2026.07 - 2026.09
+            <br />
+            [position] Frontend Developer
           </p>
         </section>
       </main>
