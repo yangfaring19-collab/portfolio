@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -40,9 +41,9 @@ function Home() {
         <section id="projects" className="section">
           <p className="eyebrow">FEATURED PROJECT</p>
 
-          <h2><a href="projects/vision">
+          <h2><Link to="projects/vision">
             VISION
-          </a></h2>
+          </Link></h2>
 
           <p className="section-description">
             Enterprise AI Code Assistant
