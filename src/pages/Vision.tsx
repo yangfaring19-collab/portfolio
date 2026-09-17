@@ -86,9 +86,7 @@ function Vision() {
             <p className="eyebrow">MOTIVATION</p>
 
             <h2>
-              코드를 빠르게 이해하는 것은 
-              <br />
-              어렵습니다.
+              코드를 빠르게 이해하는 것은 어렵습니다.
             </h2>
 
             <p>
