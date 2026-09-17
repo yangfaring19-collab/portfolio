@@ -18,9 +18,7 @@ function Home() {
           </h1>
 
           <p className="hero-description">
-            I build developer tools and AI-powered software
-            that help developers understand complex systems
-            and work more efficiently.
+            사용자가 소프트웨어를 더 잘 이해할 수 있도록 돕는 도구를 개발합니다.
           </p>
 
           <div className="hero-actions">
@@ -42,7 +40,9 @@ function Home() {
         <section id="projects" className="section">
           <p className="eyebrow">FEATURED PROJECT</p>
 
-          <h2>VISION</h2>
+          <h2><a href="projects/vision">
+            VISION
+          </a></h2>
 
           <p className="section-description">
             Enterprise AI Code Assistant

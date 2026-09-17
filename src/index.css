@@ -7,6 +7,9 @@
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+  --mouse-x: 0;
+  --mouse-y: 0;
 }
 
 * {
@@ -21,6 +24,38 @@ body {
   margin: 0;
   min-width: 320px;
   background: #080b10;
+}
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  background: #080b10;
+}
+
+.app-background {
+  position: fixed;
+  inset: -30px;
+
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+
+  transform:
+    translate(
+      calc(var(--mouse-x) * 8px),
+      calc(var(--mouse-y) * 8px)
+    );
+  
+  transition: transform 0.15s ease-out
+}
+
+.app > *:not(.app-background) {
+  position: relative;
 }
 
 a {
@@ -289,6 +324,15 @@ a {
   line-height: 1.9;
 }
 
+.case-content blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background: #0c1016;
+  border-left: 4px solid #4da3ff;
+  color: #d8dee8;
+  font-style: italic;
+}
+
 
 /* Problem */
 
@@ -439,6 +483,16 @@ a {
   background: #0c1016;
 }
 
+.tech-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+
+  padding: 32px 0;
+
+  border-bottom: 1px solid #1b222c;
+}
+
 
 /* Mobile */
 
@@ -479,10 +533,11 @@ a {
   background: #0c1016;
 
   overflow: hidden;
+  margin: 20px 0;
 }
 
-.architecture-image > p {
-  margin-top:0;
+.architecture-image p {
+  margin-top: 0px;
   color: #7f8998;
   font-size: 14px;
 }
@@ -512,7 +567,7 @@ a {
 
   padding: 40px 0;
 
-  border-bottom: 1px solid #1b222c;
+  border-top: 1px solid #1b222c;
 }
 
 .architecture-layer-number {
@@ -1019,6 +1074,10 @@ a {
   letter-spacing: 0.08em;
 
   color: #4c5664;
+}
+
+.outcome p {
+  color:#bbc3cf
 }
 
 @media (max-width: 700px) {
